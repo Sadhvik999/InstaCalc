@@ -1,12 +1,15 @@
 import React from 'react';
 import Navbar from '../components/common/Navbar';
-import ContactForm from '../components/contact/ContactForm';
 import Footer from '../components/common/Footer';
 
 const ContactPage = () => (
   <>
     <Navbar />
-    <ContactForm />
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Name" />
+    <input type="email" placeholder="Email" />
+    <textarea placeholder="Your message" />
+    <button type="submit">Send</button>
     <Footer />
   </>
 );

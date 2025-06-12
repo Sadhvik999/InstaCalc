@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./common.css"
 const Footer = () => (
   <footer>
     <p>2025 Loan Management App</p>

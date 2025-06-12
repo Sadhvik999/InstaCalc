@@ -1,16 +1,25 @@
 import React from 'react';
 import Navbar from '../components/common/Navbar';
-import HeroSection from '../components/home/HeroSection';
-import LoanCalculator from '../components/home/LoanCalculator';
-import Features from '../components/home/Features';
 import Footer from '../components/common/Footer';
 
 const HomePage = () => (
   <>
     <Navbar />
-    <HeroSection />
-    <LoanCalculator />
-    <Features />
+    <div >
+      <section>
+        <h1>Welcome to LoanPro</h1>
+        <p >Manage your loans efficiently with real-time calculations and reminders.</p>
+      </section>
+    </div>
+    <div>
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Monthly Loan Payment Calculation</li>
+        <li>Detailed Amortization Schedule</li>
+      </ul>
+    </section>
+    </div>
     <Footer />
   </>
 );

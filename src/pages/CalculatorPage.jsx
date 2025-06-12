@@ -3,7 +3,6 @@ import Navbar from '../components/common/Navbar';
 import LoanForm from '../components/calculator/LoanForm';
 import ResultsDisplay from '../components/calculator/ResultsDisplay';
 import Footer from '../components/common/Footer';
-import  '../calculator.css';
 const CalculatorPage = () => {
   const [results, setResults] = useState(null);
 
@@ -29,10 +28,10 @@ const CalculatorPage = () => {
 
   return (
     <>
-      <Navbar className="navbar" />
-      <LoanForm className="loan-form" onCalculate={handleCalculate} />
-      <ResultsDisplay className="results-display" results={results} />
-      <Footer className="footer" />
+      <Navbar />
+      <LoanForm onCalculate={handleCalculate} />
+      <ResultsDisplay results={results} />
+      <Footer />
     </>
   );
 };

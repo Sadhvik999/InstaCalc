@@ -8,7 +8,7 @@ const CalculatorPage = () => {
 
   const handleCalculate = ({ amount, rate, years }) => {
     const p = parseFloat(amount);
-    const r = parseFloat(rate) / 100 / 12;
+    const r = parseFloat(rate) /100/12;
     const n = parseFloat(years) * 12;
 
     if (isNaN(p) || p <= 0 || isNaN(r) || r < 0 || isNaN(n) || n <= 0) {
@@ -16,9 +16,9 @@ const CalculatorPage = () => {
       return;
     }
 
-    const monthly = (p * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
-    const total = monthly * n;
-    const interest = total - p;
+    const monthly = (p * r * n) ;
+    const total = monthly * n + p;
+    const interest = total-p;
     setResults({
       monthly: monthly.toFixed(2),
       total: total.toFixed(2),

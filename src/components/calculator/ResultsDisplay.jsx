@@ -6,8 +6,8 @@ const ResultsDisplay = ({ results }) => (
     {results && (
       <>
         <p>Monthly Payment: ${results.monthly}</p>
-        <p>Total Payment: ${results.total}</p>
         <p>Total Interest: ${results.interest}</p>
+        <p>Total Payment: ${results.total}</p>
       </>
     )}
   </div>
